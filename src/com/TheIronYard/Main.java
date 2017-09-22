@@ -5,12 +5,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-
-   Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         VehicleInfo newVehicle = new VehicleInfo();
-
 
         System.out.println("Enter your Vehicles VIN");
         newVehicle.setVIN(sc.nextInt());
@@ -27,5 +24,11 @@ public class Main {
         System.out.println("Enter your engine displacement");
         newVehicle.setEngineDisplacement(sc.nextDouble());
 
+        TelematicsService telematicsService = new TelematicsService();
+
+        telematicsService.report(newVehicle);
     }
 }
+
+
+
