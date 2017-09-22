@@ -8,9 +8,6 @@ public class VehicleInfo{
     private double odometerAtLastService;
     private double engineDisplacement;
 
-
-    void report(VehicleInfo vehicleInfo){}
-
         public VehicleInfo() {}
 
         public int getVIN() {
